@@ -1,0 +1,10 @@
+﻿<browsers>
+
+  <browser refID="default">
+    <controlAdapters>
+      <adapter controlType="Microsoft.SharePoint.WebControls.ImageLink"
+               adapterType="ImageLinkControlAdapter.Code.ImageLinkAdapter, ImageLinkControlAdapter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=060ca79b01ebb594" />
+    </controlAdapters>
+  </browser>
+
+</browsers>

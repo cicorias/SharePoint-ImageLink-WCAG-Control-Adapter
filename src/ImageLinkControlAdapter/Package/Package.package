@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="78c7b96d-1f3a-4bcd-9c4a-2e65e2cebb02" solutionId="78c7b96d-1f3a-4bcd-9c4a-2e65e2cebb02" resetWebServer="false" sharePointProductVersion="15.0" name="Image Link Control Adapter Package" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="bd16c177-cf2d-4c34-bc73-8257d693aea6" />
+  </features>
+</package>
