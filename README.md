@@ -40,12 +40,12 @@ Inside of HTML version of the master pages, you will see the following:
 
 This will translate to just using the ImageLink SharePoint Web Control, and will emit the following:
 
-        <div id="imgPrefetch" style="display:none">
-<img src="/_layouts/15/images/favicon.ico?rev=23" />
-<img src="/_layouts/15/images/spcommon.png?rev=23" />
-<img src="/_layouts/15/images/spcommon.png?rev=23" />
-<img src="/_layouts/15/images/siteIcon.png?rev=23" />
-
+    <div id="imgPrefetch" style="display:none">
+    <img src="/_layouts/15/images/favicon.ico?rev=23" />
+    <img src="/_layouts/15/images/spcommon.png?rev=23" />
+    <img src="/_layouts/15/images/spcommon.png?rev=23" />
+    <img src="/_layouts/15/images/siteIcon.png?rev=23" />
+    
 
 So, we need to “add” an alt=”” tag to this “block” of HTML.
 
@@ -115,6 +115,15 @@ The main part of the control adapter to do this re-rendering is within the Rende
     		return source.IndexOf(toCheck, comp) >= 0;
     	}
     }
+
+
+When all is done, we get the fixed up HTML as follows:
+
+    <div id="imgPrefetch" style="display:none">
+    <img src="/_layouts/15/images/favicon.ico?rev=23" alt="" />
+    <img src="/_layouts/15/images/spcommon.png?rev=23" alt="" />
+    <img src="/_layouts/15/images/spcommon.png?rev=23" alt="" />
+    <img src="/_layouts/15/images/siteIcon.png?rev=23" alt="" />
 
 
 Finally, the full Visual Studio 2013 Solution and source is located here: 
